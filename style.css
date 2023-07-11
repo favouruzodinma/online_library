@@ -40,13 +40,14 @@ p{
     width:19vw;
 }
 input{
-    width: 40vw;
+    width: 45vw;
     height: 6vh;
     border-radius: 50px;
     outline: none;
     border: none;
     border: 1px solid black;
     padding-left: 15px;
+    padding-right: 37px;
 }
 form button{
     width: 100px;
@@ -54,5 +55,52 @@ form button{
     border: none;
     background-color: rgb(37, 43, 43);
     color: white;
-    /* margin-left: -6%; */
+    margin-left: -6%;
+}
+@media screen and (max-width: 400px) {
+    #main{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .books{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        margin: 20px 0px;
+        height: 50vh;
+        padding-bottom: 10px;
+        background-color: aliceblue;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        /* line-height: 30px; */
+        text-align: center;
+        margin-left: 30px;
+    }
+    p{
+        width: 73vw;
+        margin: 10px 0px;
+    }
+    .books img{
+        height: 200px;
+        width:80vw;
+    }
+    input{
+        width: 65vw;
+        height: 6vh;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        border: 1px solid black;
+        padding-left: 15px;
+        padding-right: 37px;
+    }
+    form button{
+        width: 100px;
+        height: 6vh;
+        border: none;
+        background-color: rgb(37, 43, 43);
+        color: white;
+        margin-left: -6%;
+    }
 }

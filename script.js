@@ -17,8 +17,10 @@ function searchBook() {
             <div class="books">
                 <img src='${book.volumeInfo.imageLinks.thumbnail}' />
                 <p>${book.volumeInfo.title}</p>
+                <div>
                 <a href='${book.volumeInfo.infoLink}' target='_blank'>Preview</a>
                 <a href='${book.volumeInfo.previewLink}' target='_blank'>Read Book</a>
+                </div>
             </div>
             `;
             books.innerHTML = boo;
